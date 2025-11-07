@@ -1,0 +1,27 @@
+#include<stdio.h>
+double ReactArea(float fWidth,float fHeight)
+{
+    double dArea=0.0;
+    
+    dArea=fWidth*fHeight;
+    return dArea;
+}
+int main()
+{
+    float fValue1=0.0,fValue2=0.0;
+    double dRet=0.0;
+
+    printf("enter a width");
+    scanf("%f",&fValue1);
+
+    printf("enter a height");
+    scanf("%f",&fValue2);
+
+    dRet=ReactArea(fValue1,fValue2);
+    printf("%f",dRet);
+
+    
+
+    return 0;
+
+}

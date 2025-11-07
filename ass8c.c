@@ -1,0 +1,26 @@
+#include<stdio.h>
+int Factorial(int iNo)
+{
+    int iFact=1;
+    if(iNo<0)
+    {
+        iNo=-iNo;
+    }
+    while(iNo>0)
+    {
+        iFact=iFact*iNo;
+        iNo--;
+    }
+    return iFact;
+}
+int main()
+{
+    int iValue=0,iRet=0;
+
+    printf("enter number");
+    scanf("%d",&iValue);
+
+    iRet=Factorial(iValue);
+
+    printf("factorial of number is %d",iRet);
+}

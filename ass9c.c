@@ -1,0 +1,33 @@
+#include<stdio.h>
+int EvenFactorial(int iNo)
+{
+    int iFact=1;
+    int i=0;
+
+    if(iNo<0)
+    {
+        iNo=-iNo;
+    }
+    for(i=iNo;i>0;i++)
+    {
+        if(i%2==0)
+        {
+            iFact=iFact*i;
+        }
+    }
+  return iFact;
+}
+int mian()
+{
+    int iValue=0 , iRet=0;
+
+    printf("enter number");
+    scanf("%d",&iValue);
+
+    iRet=EvenFactorial(iValue);
+
+    printf("Even facatorial of number is %d",iRet);
+
+    return 0;
+
+}
